@@ -29,11 +29,3 @@ Difficult steps of integration:
 3. Checkout Page.
 4. Redirection Page.
 5. Confirmation Page - Declined order.
-
-
-== Configuration ==
-
-Difficult steps of integration:
-*   Get the Merchant ID and working key by logging into your verified ccAvenue Merchant panel.(Settings and Options > Generate Working Key)
-*   Put the above field in (woocommerce > settings > Checkout > ccavenue) under respective fields and save.
-*   Now go and place a test order.
