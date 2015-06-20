@@ -4,7 +4,7 @@
  * Plugin Name: ccAvenue gateway for WooCommerce
  * Plugin URI: http://www.coravity.com/
  * Description: The plugin add ccAvenue, an indian payment gateway, to wooCommerce(2.0.0+) payment gateways list. The plugin is updated with the latest API of ccAvenue (as on June, 2015).
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Coravity Infotech
  * Author URI: http://www.coravity.com/
  * Developer: Abhishek Sachan
@@ -212,8 +212,9 @@ function woocommerce_cc_init()
             if ($order_id != '') {
                 $rcvdString=$MerchantId.'|'.$order_id.'|'.$Amount.'|'.$AuthDesc.'|'.$this->working_key;
                 $veriChecksum=verifyChecksum(genchecksum($rcvdString), $Checksum);
-                
-                $order = new WC_Order($order_id);
+                $order_id_parts = explode('_', $order_id);
+                $order_id_actual = $order_id_parts[0];
+                $order = new WC_Order($order_id_actual);
                 $transauthorised = false;
                 if($veriChecksum==TRUE && $AuthDesc==="Y")
                 {
@@ -273,7 +274,7 @@ function woocommerce_cc_init()
         {
             global $woocommerce;
             $order         = new WC_Order($order_id);
-            $order_id      = $order_id;
+            $order_id      = $order_id.'_'.time();
             $ccavenue_args = array(
                 'Merchant_Id' => $this->merchant_id,
                 'Amount' => $order->order_total,
