@@ -2,8 +2,8 @@
 Contributors: asachanfbd
 Tags: ccavenue, payment gateway, woocommerce, woo commerce, cc avenue, cc avenue gateway, ccavenue gateway
 Requires at least: 4.0.1
-Tested up to: 4.2
-Stable tag: 4.2
+Tested up to: 4.2.2
+Stable tag: 4.2.2
 License: GPLv3 or later License
 
 Integrates CCAvenue Payment Gateway with WooCommerce.
