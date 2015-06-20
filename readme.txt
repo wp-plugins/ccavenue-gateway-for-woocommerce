@@ -28,4 +28,4 @@ Difficult steps of integration:
 2. Enter Merchant Id and Working Keys here.
 3. Checkout Page.
 4. Redirection Page.
-5. Confirmation Page - Declined order.
+5. Confirmation Page.
