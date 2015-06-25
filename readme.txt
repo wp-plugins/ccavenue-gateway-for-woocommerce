@@ -34,6 +34,9 @@ This plugin will provide you with the hassle free integration of ccAvenue paymen
 
 == Changelog ==
 
+= 1.0.2 - 25/06/2015 =
+* Fix - Resolved Conflicts with other ccavenue plugins using same functiona names.
+
 = 1.0.1 - 20/06/2015 =
 * Fix - While paying again for a failed transaction payment gateway throwing duplicate order error.
 * Added Plugin icon.
