@@ -34,6 +34,9 @@ This plugin will provide you with the hassle free integration of ccAvenue paymen
 
 == Changelog ==
 
+= 1.0.3 - 27/07/2015 =
+* Critical Fix - Order Completion message even on failed transaction. 
+
 = 1.0.2 - 25/06/2015 =
 * Fix - Resolved Conflicts with other ccavenue plugins using same functiona names.
 
